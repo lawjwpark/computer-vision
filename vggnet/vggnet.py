@@ -80,7 +80,7 @@ def get_vgg16_avg(input_shape=(224, 224, 3), classes=10):
     x = MaxPooling2D(pool_size=(2, 2), strides=(2, 2), name="block5_pool")(x)
 
     # Classification block
-    x = GlobalAveragePooling2D(name="avg_pool")(x)
+    x = GlobalAveragePooling2D(name="global_avg_pool")(x)
     x = Dropout(rate=0.5, name="dropout_1")(x)
     x = Dense(units=128, activation="relu", name="fc1")(x)
     x = Dropout(rate=0.5, name="dropout_2")(x)
@@ -90,4 +90,3 @@ def get_vgg16_avg(input_shape=(224, 224, 3), classes=10):
     model = Model(inputs=inputs, outputs=outputs, name="vgg16_avg")
     
     return model
-
