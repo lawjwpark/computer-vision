@@ -1,4 +1,5 @@
 kaggle.json
 venv
 contests/*/data
-pytorch study/data
+pytorch_study/data
+pytorch_study/*.pth
