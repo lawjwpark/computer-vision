@@ -6,3 +6,5 @@ pytorch_study/*.pth
 mmcv_github/
 mmengine_github/
 mmdetection/
+pytorch_study/UAV/inference_outputs
+pytorch_study/UAV/outputs
