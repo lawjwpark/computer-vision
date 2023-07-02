@@ -4,3 +4,4 @@ contests/*/data
 pytorch_study/data
 pytorch_study/*.pth
 mmcv_github/
+mmengine_github/
